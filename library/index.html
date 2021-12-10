@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="../img/logo.png" alt="Logo" class="logo container">
+    </header>
+    <div class="movie-form container">
+        <h1>Movie Library</h1>
+    </div>
+    <div class="list-section">
+        <div class="nav-bar container">
+          <a href="/lists">Go to Lists</a>
+        </div>
+        <div class="list-container">
+            <ul class="list-body ">
+                <li id="list-item">      
+                </li>
+            </ul> 
+        </div>
+    <div id="movies_list"></div>
+    </div> 
+    <div id="adding-form" class="adding-form container">
+        <form class="movie-form">
+        <input type="text" id="form-title" placeholder="Title">
+        <br>
+        <input type="text" id="form-imdb_id" placeholder="IMDB ID">
+        <br>
+        <input type="text" id="form-year" placeholder="Year">
+        <br>
+        <input type="text" id="form-genre" placeholder="Genre">
+        <br>
+        <input type="text" id="form-director" placeholder="Director">
+        <br>
+        <button id="form-submit">Add</button>
+        </form> 
+    </div>
+
+</body>
+
+</html>
